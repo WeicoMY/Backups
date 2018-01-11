@@ -247,6 +247,14 @@
          "keyword": "udacity",
          "title": "visti usdacity.com",
          "url": "https://classroom.udacity.com/me"
+      }, {
+         "enabled": true,
+         "icon": {
+
+         },
+         "keyword": "cc",
+         "title": "Check the word",
+         "url": "http://dict.youdao.com/w/{query}"
       } ]
    },
    "launch_apps": {
@@ -355,6 +363,14 @@
             }, {
                "name": "\u7535\u5F71",
                "path": "G:\\\u7535\u5F71",
+               "type": "favorite_folder"
+            }, {
+               "name": ".spf13-vim-3",
+               "path": "C:\\Users\\WeicoMY\\.spf13-vim-3",
+               "type": "favorite_folder"
+            }, {
+               "name": "Document",
+               "path": "E:\\Document",
                "type": "favorite_folder"
             } ],
             "type": "submenu"
