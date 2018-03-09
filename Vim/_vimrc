@@ -78,12 +78,6 @@ set columns=100
 let mapleader=","
 "------------------------------
 
-
-"------------Bundle------------
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
-endif
-"------------------------------
 set diffexpr=MyDiff()
 function MyDiff()
   let opt = '-a --binary '
