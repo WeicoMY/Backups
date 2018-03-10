@@ -6,10 +6,6 @@
 "Use Vim setting,rather than Vi setting
 set nocompatible
 
-"Set the encoding
-set fencs=utf-8,gbk,gbk18030,gb2312,cp036
-set fenc=utf-8
-
 "Share the clipboard with system
 set clipboard+=unnamed
 
@@ -26,6 +22,14 @@ syntax enable
 set nobackup
 set noswapfile
 set nowritebackup
+"--------------------------------
+
+"----------Coding & Lan----------
+"Set the encoding
+set fencs=utf-8,gbk,gbk18030,gb2312,cp036
+set fenc=utf-8
+set encoding=utf-8
+let $LANG='en_US.UTF-8'
 "--------------------------------
 
 
