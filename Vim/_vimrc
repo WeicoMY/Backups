@@ -6,6 +6,9 @@
 "Use Vim setting,rather than Vi setting
 set nocompatible
 
+"Setting the default working place
+exec 'cd '.fnameescape('F:\WorkStation')
+
 "Share the clipboard with system
 set clipboard+=unnamed
 
@@ -86,8 +89,16 @@ set columns=100
 "-----------Keymaps------------
 "Setting the leadermap
 let mapleader=","
-nmap <leader>s :source $vim/_vimrc<cr>
-nmap <leader>e :e $vim/_vimrc<cr>
+nmap <leader><F1> :e $vim/_vimrc<cr>
+nmap <leader><F2> :e $vim/_vimrc.vundle<cr>
+nmap <leader><F3> :source $vim/_vimrc<cr>
+
+map <leader>t :tabn<cr>
+map <a-k> <c-w>c
+map <a-j> <c-w>w
+map <a-o> <c-w>o
+map <a-i> <c-w>|
+map <a-u> <c-w>_
 "------------------------------
 
 

@@ -27,7 +27,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim'}
 
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
@@ -39,7 +39,8 @@ Plugin 'kien/ctrlp.vim'
 
 "-----------Nerdtree-----------{{{
 Plugin 'scrooloose/nerdtree'
-nmap <leader>n :NERDTreeToggle<cr>
+"Plugin 'nerdtree_plugin',{'$vim/vimfiles/bundle/Vundle.vim':'nerdtree'}
+nmap <leader>e :NERDTreeToggle<cr>
 "}}}
 
 Plugin 'easymotion/vim-easymotion'
