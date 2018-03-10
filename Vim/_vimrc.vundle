@@ -42,8 +42,15 @@ Plugin 'scrooloose/nerdtree'
 nmap <leader>n :NERDTreeToggle<cr>
 "}}}
 
+Plugin 'easymotion/vim-easymotion'
 Plugin 'mattn/emmet-vim'
+
+"-----------Airline------------{{{
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+let g:airline_theme='solarized'
+"}}}
+
 Plugin 'scrooloose/nerdcommenter'
 "----------------------------------------------------------
 " All of your Plugins must be added before the following line
