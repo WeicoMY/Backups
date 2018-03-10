@@ -55,7 +55,8 @@ set history=1024
 
 "-------------GUI--------------
 "Set the theme"
-colorscheme Tomorrow-Night-Eighties
+set background=dark
+colorscheme solarized
 
 "Set the font type and the font size
 set guifont=consolas:h16
