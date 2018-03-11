@@ -53,7 +53,10 @@ let NERDTreeChDirMode=2
 "The Bookmarks Sort by case-sensitive
 let NERDTreeBookmarkSort=2
 
-nmap <leader>e :NERDTreeToggle<cr>
+"Always show the bookmarks
+let NERDTreeShowBookmarks=1
+
+map <leader>e :NERDTreeToggle<cr>
 "}}}
 
 Plugin 'easymotion/vim-easymotion'
@@ -66,9 +69,12 @@ let g:airline_theme='solarized'
 "}}}
 
 Plugin 'mhinz/vim-startify'
+"let g:startify_bookmarks = ['$HOME/.NERDTreeBookmarks']
+
+"-----------NerdCommenter----{{{
 Plugin 'scrooloose/nerdcommenter'
 "----------------------------------------------------------
-" All of your Plugins must be added before the following line
+" All of your Plugins must mustbe added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:

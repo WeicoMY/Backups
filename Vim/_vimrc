@@ -1,4 +1,4 @@
-"source $VIMRUNTIME/vimrc_example.vim
+"jsource $VIMRUNTIME/vimrc_example.vim
 "source $VIMRUNTIME/mswin.vim
 "behave mswin
 
@@ -95,11 +95,17 @@ let mapleader=","
 nmap <leader><F1> :e $vim/_vimrc<cr>
 nmap <leader><F2> :e $vim/_vimrc.vundle<cr>
 nmap <leader><F3> :source $vim/_vimrc<cr>
+nnoremap <leader>cwd :cd %:p:h<CR>
 nmap <F4> :w<cr>
 nmap <leader><F4> :wq<cr>
-inoremap <c-e> <c-o>de
+inoremap <c-e> <END>
+inoremap <c-b> <HOME>
 inoremap <c-l> <del>
-inoremap <c-i> <esc>
+
+inoremap <M-j> <Down>
+inoremap <M-k> <Up>
+inoremap <M-h> <left>
+inoremap <M-l> <Right>
 
 "tab keymaping--------------{{{
 map <leader>tn :tabnew<cr>
@@ -109,8 +115,8 @@ map <leader>tl :tabn<cr>
 "}}}
 
 "Adjust the size of the windows{{{
-nnoremap <M-j> :resize +5<cr>
-nnoremap <M-k> :resize -5<cr>
+nnoremap <M-k> :resize +5<cr>
+nnoremap <M-j> :resize -5<cr>
 nnoremap <M-h> :vertical resize -5<cr>
 nnoremap <M-l> :vertical resize +5<cr>
 "}}}
