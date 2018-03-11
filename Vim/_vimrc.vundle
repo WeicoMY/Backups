@@ -40,6 +40,19 @@ Plugin 'kien/ctrlp.vim'
 "-----------Nerdtree-----------{{{
 Plugin 'scrooloose/nerdtree'
 "Plugin 'nerdtree_plugin',{'$vim/vimfiles/bundle/Vundle.vim':'nerdtree'}
+
+"Sort by the case sensitively
+let NERDTreeCaseSensitiveSort=1
+
+"Sort by number sensitivity
+let NERDTreeNatralSort=1
+
+"Change the CWD when the root change
+let NERDTreeChDirMode=2
+
+"The Bookmarks Sort by case-sensitive
+let NERDTreeBookmarkSort=2
+
 nmap <leader>e :NERDTreeToggle<cr>
 "}}}
 
