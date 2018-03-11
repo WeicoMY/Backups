@@ -65,6 +65,7 @@ Plugin 'vim-airline/vim-airline-themes'
 let g:airline_theme='solarized'
 "}}}
 
+Plugin 'mhinz/vim-startify'
 Plugin 'scrooloose/nerdcommenter'
 "----------------------------------------------------------
 " All of your Plugins must be added before the following line
