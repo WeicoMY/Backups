@@ -9,6 +9,9 @@ set nocompatible
 "Setting the default working place
 exec 'cd '.fnameescape('F:\WorkStation')
 
+"Ingnore case-sensitivity smartly
+set ignorecase smartcase
+
 "Share the clipboard with system
 set clipboard+=unnamed
 
@@ -92,13 +95,25 @@ let mapleader=","
 nmap <leader><F1> :e $vim/_vimrc<cr>
 nmap <leader><F2> :e $vim/_vimrc.vundle<cr>
 nmap <leader><F3> :source $vim/_vimrc<cr>
+nmap <F4> :w<cr>
+nmap <leader><F4> :wq<cr>
+inoremap <c-e> <c-o>de
+inoremap <c-l> <del>
+inoremap <c-i> <esc>
 
-map <leader>t :tabn<cr>
-map <a-k> <c-w>c
-map <a-j> <c-w>w
-map <a-o> <c-w>o
-map <a-i> <c-w>|
-map <a-u> <c-w>_
+"tab keymaping--------------{{{
+map <leader>tn :tabnew<cr>
+map <leader>tc :tabclose<cr>
+map <leader>th :tabp<cr>
+map <leader>tl :tabn<cr>
+"}}}
+
+"Adjust the size of the windows{{{
+nnoremap <M-j> :resize +5<cr>
+nnoremap <M-k> :resize -5<cr>
+nnoremap <M-h> :vertical resize -5<cr>
+nnoremap <M-l> :vertical resize +5<cr>
+"}}}
 "------------------------------
 
 
